@@ -1,0 +1,118 @@
+import { Event } from "@/components/events/EventCard";
+
+export const mockEvents: Event[] = [
+  {
+    id: "1",
+    title: "Web3 Summit 2025",
+    description: "The largest decentralized tech conference bringing together builders, investors, and innovators from across the blockchain ecosystem.",
+    date: "March 15, 2025",
+    time: "9:00 AM",
+    location: "Convention Center, San Francisco",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop",
+    price: 150,
+    currency: "$VERY",
+    totalTickets: 2000,
+    soldTickets: 1450,
+    category: "Tech",
+    organizer: "Very Network DAO"
+  },
+  {
+    id: "2",
+    title: "Neon Nights Electronic Festival",
+    description: "An immersive electronic music experience featuring world-renowned DJs and cutting-edge visual productions.",
+    date: "April 20, 2025",
+    time: "8:00 PM",
+    location: "Warehouse District, Los Angeles",
+    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=500&fit=crop",
+    price: 75,
+    currency: "$VERY",
+    totalTickets: 5000,
+    soldTickets: 3200,
+    category: "Music",
+    organizer: "Neon Productions"
+  },
+  {
+    id: "3",
+    title: "Digital Art Gallery Opening",
+    description: "Explore the intersection of blockchain and art at this exclusive gallery featuring NFT masterpieces from renowned digital artists.",
+    date: "March 28, 2025",
+    time: "6:00 PM",
+    location: "Modern Art Museum, New York",
+    image: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&h=500&fit=crop",
+    price: 25,
+    currency: "$VERY",
+    totalTickets: 300,
+    soldTickets: 180,
+    category: "Art",
+    organizer: "CryptoArt Collective"
+  },
+  {
+    id: "4",
+    title: "Gaming Tournament Championship",
+    description: "Compete in the ultimate blockchain gaming tournament with prizes worth over 10,000 $VERY tokens.",
+    date: "May 5, 2025",
+    time: "12:00 PM",
+    location: "Esports Arena, Chicago",
+    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=500&fit=crop",
+    price: 50,
+    currency: "$VERY",
+    totalTickets: 500,
+    soldTickets: 420,
+    category: "Gaming",
+    organizer: "VeryGaming Guild"
+  },
+  {
+    id: "5",
+    title: "Mindfulness & Wellness Retreat",
+    description: "A three-day retreat focused on mental wellness, meditation, and holistic health practices for the Web3 community.",
+    date: "June 1-3, 2025",
+    time: "All Day",
+    location: "Mountain Retreat Center, Colorado",
+    image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&h=500&fit=crop",
+    price: 200,
+    currency: "$VERY",
+    totalTickets: 100,
+    soldTickets: 65,
+    category: "Wellness",
+    organizer: "Zen Protocol"
+  },
+  {
+    id: "6",
+    title: "Blockchain Developer Bootcamp",
+    description: "Intensive 2-day workshop covering smart contract development, security best practices, and dApp architecture.",
+    date: "April 10-11, 2025",
+    time: "9:00 AM",
+    location: "Tech Hub, Austin",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop",
+    price: 100,
+    currency: "$VERY",
+    totalTickets: 50,
+    soldTickets: 42,
+    category: "Education",
+    organizer: "VeryLabs Academy"
+  },
+];
+
+export const getUserTickets = () => [
+  {
+    ...mockEvents[0],
+    ticketId: "TICKET-001",
+    purchaseDate: "Feb 15, 2025",
+    ticketType: "VIP",
+    status: "valid" as const,
+  },
+  {
+    ...mockEvents[1],
+    ticketId: "TICKET-002",
+    purchaseDate: "Feb 20, 2025",
+    ticketType: "General",
+    status: "valid" as const,
+  },
+  {
+    ...mockEvents[3],
+    ticketId: "TICKET-003",
+    purchaseDate: "Jan 10, 2025",
+    ticketType: "Early Bird",
+    status: "used" as const,
+  },
+];
