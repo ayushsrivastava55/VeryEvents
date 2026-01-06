@@ -106,34 +106,7 @@ npx hardhat compile
 
 ## What's Next (Priority Order)
 
-### 🔴 Critical
-1. **Deploy contracts to Very Network**
-   - Get $VERY for gas
-   - Deploy EventFactory
-   - Test deployment
 
-2. **Connect wallet in frontend**
-   - Configure Wepin properly
-   - Sign transactions
-   - Display NFT tickets
-
-3. **End-to-end NFT flow**
-   - Create event → Deploy contract
-   - Buy ticket → Mint NFT
-   - Check-in → Verify ownership
-
-### 🟡 High Priority
-4. **QR Scanner UI**
-5. **Event analytics dashboard**
-6. **Ticket resale marketplace**
-7. **Multiple ticket tiers**
-
-### 🟢 Nice to Have
-8. **Verychat bot integration**
-9. **Rewards & POAP badges**
-10. **DAO event governance**
-
----
 
 ## File Structure
 
