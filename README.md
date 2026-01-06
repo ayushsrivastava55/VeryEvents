@@ -2,11 +2,7 @@
 
 A Web3 event management platform on Very Network with NFT ticketing, phone authentication, and blockchain-verified check-ins.
 
-## Project Status: ~60% Complete
 
-✅ **Done**: Frontend, Backend API, Smart Contracts, Integration Layer
-⚠️ **In Progress**: Blockchain deployment, Wallet integration
-❌ **Todo**: Verychat bot, Rewards system, Secondary marketplace
 
 ---
 
